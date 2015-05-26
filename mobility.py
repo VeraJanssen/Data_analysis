@@ -18,6 +18,15 @@ import matplotlib.pyplot as plt
 
  # open IVsd files from IVsd folder
 
+IVg = np.loadtxt('D:/verajanssen/megasweep2.dat')
+gate = np.linspace(0.5, -0.5, np.size(IVg,1))
+
+
+plt.plot(gate, IVg[0, :])
+plt.show()
+
+
+
  # open IVg files from IVg folder
 
  # check for loop or seperate files
