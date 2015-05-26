@@ -21,8 +21,8 @@ import matplotlib.pyplot as plt
 IVg = np.loadtxt('D:/verajanssen/megasweep2.dat')
 gate = np.linspace(0.5, -0.5, np.size(IVg,1))
 
-
-plt.plot(gate, IVg[0, :])
+for i in range(np.size(IVg, 0)):
+    plt.plot(gate, IVg[i, :])
 plt.show()
 
 
